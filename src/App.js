@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './App.css';
+import CharacterAttr from './components/CharacterAttr.js'
+import Characters from './components/Charaters';
 import { ATTRIBUTE_LIST, CLASS_LIST, SKILL_LIST } from './consts.js';
 
 
@@ -10,15 +12,13 @@ function App() {
       <header className="App-header">
         <h1>React Coding Exercise</h1>
       </header>
-      <section className="App-section">
-        <div>
-          Value:
-          {num}
-          <button>+</button>
-          <button>-</button>
-        </div>
-      </section>
+     <div className="App">
+        <section className="App-section">
+          <Characters />   
+        </section>
+      </div>
     </div>
+   
   );
 }
 
